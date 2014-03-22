@@ -1,0 +1,14 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Leonardo
+ * Date: 22/03/14
+ * Time: 18:14
+ */
+
+return array(
+    'username' => '',
+    'password' => '',
+    'recipient' => array('email' => '', 'name' => ''),
+    'from' => array('email' => '', 'name' => '')
+);
