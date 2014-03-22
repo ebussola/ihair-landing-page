@@ -14,7 +14,7 @@ if ( !empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['message
         $config = include 'config.php';
 
         $transport = new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl');
-        $transport->setUsername($config['usename']);
+        $transport->setUsername($config['username']);
         $transport->setPassword($config['password']);
         $mailer = new Swift_Mailer($transport);
 
