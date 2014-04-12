@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,14 +13,14 @@
 
     <!-- Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet">
     <link id="scrollUpTheme" href="css/themes/image.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 
     <script src="js/modernizr.custom.js"></script>
@@ -28,171 +29,213 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="img/ico/favicon.png">
 
-      <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-          ga('create', 'UA-48289597-2', 'ihair.com.br');
-          ga('send', 'pageview');
+        ga('create', 'UA-48289597-2', 'ihair.com.br');
+        ga('send', 'pageview');
 
-          var Analytics = {
-              clickedFacebook: function() {
-                  ga('send', 'event', 'link', 'facebook', 'clicked');
-              },
+        var Analytics = {
+            clickedFacebook: function () {
+                ga('send', 'event', 'link', 'facebook', 'clicked');
+            },
 
-              clickedFeedback: function() {
-                  ga('send', 'event', 'link', 'feedback', 'clicked');
-              },
+            clickedFeedback: function () {
+                ga('send', 'event', 'link', 'feedback', 'clicked');
+            },
 
-              focusNewsletter: function() {
-                  ga('send', 'event', 'field', 'newsletter', 'focus');
-              },
+            focusNewsletter: function () {
+                ga('send', 'event', 'field', 'newsletter', 'focus');
+            },
 
-              submitedNewsletter: function() {
-                  ga('send', 'event', 'field', 'newsletter', 'submited');
-              }
-          }
+            submitedNewsletter: function () {
+                ga('send', 'event', 'field', 'newsletter', 'submited');
+            }
+        }
 
-      </script>
-  </head>
+    </script>
+</head>
 
-  <body>
-  
-    <header id="header" class="header">
-      <div class="container banner">
+<body>
+
+<header id="header" class="header">
+    <div class="container banner">
+        <img src="img/ihair-logo-transparent.png">
         <h1 class="title">iHair</h1>
-       	<p class="description">O iHair vai inovar a beleza da mulher atual.<br />
+
+        <p class="description">O iHair vai inovar a beleza da mulher atual.<br/>
 
             Ele foi pensado para você que quer estar sempre linda, sem perder tempo.
 
             Em casa, no trabalho ou viajando, você poderá localizar os melhores centros de beleza e
 
             estética, em qualquer lugar do país, e agendar o dia e horário ideal em apenas um clique.</p>
-       	<div class="col-sm-6 col-md-offset-3">
-            <form target="_blank" action="http://ebussola.us3.list-manage.com/subscribe/post?u=5a2b2934fcb8857ad6274c1dd&amp;id=c863cd0d99" method="POST" class="form-subscription" role="form">
+
+        <div class="col-sm-6 col-md-offset-3">
+            <form target="_blank"
+                  action="http://ebussola.us3.list-manage.com/subscribe/post?u=5a2b2934fcb8857ad6274c1dd&amp;id=c863cd0d99"
+                  method="POST" class="form-subscription" role="form">
                 <div class="input-group">
-                    <input onfocus="Analytics.focusNewsletter()" type="email" name="EMAIL" class="form-control input-lg" placeholder="Gostei! Quero ficar por dentro!" required>
+                    <input onfocus="Analytics.focusNewsletter()" type="email" name="EMAIL" class="form-control input-lg"
+                           placeholder="Gostei! Quero ficar por dentro!" required>
 			      <span class="input-group-btn">
-			        <input class="btn btn-success btn-lg" style="height: 46px;" type="submit" value="Assinar!" onclick="Analytics.submitedNewsletter()" />
+			        <input class="btn btn-success btn-lg" style="height: 46px;" type="submit" value="Assinar!"
+                           onclick="Analytics.submitedNewsletter()"/>
 			      </span>
-                </div><!-- /input-group -->
+                </div>
+                <!-- /input-group -->
                 <span class="help-block">Assine nossa newsletter para ficar sabendo de todas as novidades!</span>
             </form>
-       	</div>
-       	<img src="img/header-iphone.png" class="img-responsive" alt="header image">
-      </div><!-- /container -->
-    </header> <!-- /.header -->
+        </div>
+        <img src="img/header-iphone.png" class="img-responsive" alt="header image">
+    </div>
+    <!-- /container -->
+</header>
+<!-- /.header -->
 
-    <section id="welcome" class="welcome text-center">
-        <div class="container">
-            <h2 class="title">Facilidade no dia a dia</h2>
-            <p>
-                No iHair você encontra todas as informações dos estabelecimentos de forma
+<section id="welcome" class="welcome text-center">
+    <div class="container">
+        <h2 class="title">Facilidade no dia a dia</h2>
 
-                prática, rápida e fácil e decide o que melhor se adapta ao seu bolso e à sua agenda.
+        <p>
+            No iHair você encontra todas as informações dos estabelecimentos de forma
 
-                Além de economizar com custos de ligações telefônicas, o iHair oferece todos os
+            prática, rápida e fácil e decide o que melhor se adapta ao seu bolso e à sua agenda.
 
-                recursos de forma gratuita.
-            </p>
-            <p>
-                Ah, e tem mais! Sabe aquela opinião amiga tão importante? No iHair você poderá ver a
+            Além de economizar com custos de ligações telefônicas, o iHair oferece todos os
 
-                avaliação feita por outros usuários e interagir com eles.
-            </p>
-        </div> <!-- /.container -->
-    </section> <!-- /.description  -->
-    
-    <footer id="footer" class="footer">
-      <div class="container">
+            recursos de forma gratuita.
+        </p>
+
+        <p>
+            Ah, e tem mais! Sabe aquela opinião amiga tão importante? No iHair você poderá ver a
+
+            avaliação feita por outros usuários e interagir com eles.
+        </p>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.description  -->
+
+<footer id="footer" class="footer">
+    <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <a class="footer-logo" href="index.html">iHair</a>
-          </div> <!-- /.col-md-2 -->
-          
-          <!-- div class="col-sm-6">
-            <p class="footer-description">In malesuada posuere ullamcorper. Donec et mi nulla, dapibus venenatis ligula. Nam porta tristique blandit. In a libero in quam vestibulum dictum. Suspendisse dui velit, vehicula at interdum eget, rutrum sed ante. Vestibulum ante ipsum primis.</p>
-          </div> <!-- /.col-sm-6 -->
+            <div class="col-md-8">
+                <a class="footer-logo" href="index.html">iHair</a>
+            </div>
+            <!-- /.col-md-2 -->
 
-          <div class="col-sm-2">
-            <h4 class="title">Follow</h4>
-            <ul class="list-unstyled">
-              <li><a href="https://www.facebook.com/ihairbrasil" onclick="Analytics.clickedFacebook()">Facebook</a></li>
-            </ul>
-          </div> <!-- /.col-sm-2 -->
+            <!-- div class="col-sm-6">
+              <p class="footer-description">In malesuada posuere ullamcorper. Donec et mi nulla, dapibus venenatis ligula. Nam porta tristique blandit. In a libero in quam vestibulum dictum. Suspendisse dui velit, vehicula at interdum eget, rutrum sed ante. Vestibulum ante ipsum primis.</p>
+            </div> <!-- /.col-sm-6 -->
 
-          <!--div class="col-sm-2">
-            <h4 class="title">Site map</h4>	
-            <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="story.html">SmartMap Story</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div> <!-- /.col-sm-2 -->
+            <div class="col-sm-2">
+                <h4 class="title">Follow</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/ihairbrasil"
+                           onclick="Analytics.clickedFacebook()">Facebook</a></li>
+                </ul>
+            </div>
+            <!-- /.col-sm-2 -->
 
-        </div> <!-- /.row -->
-      </div> <!-- /.container -->
-      
-    </footer>
+            <!--div class="col-sm-2">
+              <h4 class="title">Site map</h4>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="story.html">SmartMap Story</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </div> <!-- /.col-sm-2 -->
 
-    <!-- Modal Button Danger -->
-    <button class="btn btn-lg btn-hmcf btn-danger" data-toggle="modal" data-target="#modalDanger" onclick="Analytics.clickedFeedback()">Feedback</button>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
 
-    <!-- Modal Danger -->
-    <div class="modal fade modal-hmcf modal-danger" id="modalDanger" tabindex="-1" role="dialog" aria-labelledby="modalDangerLabel" aria-hidden="true">
-      <div class="modal-dialog">
+</footer>
+
+<!-- Modal Button Danger -->
+<button class="btn btn-lg btn-hmcf btn-danger" data-toggle="modal" data-target="#modalDanger"
+        onclick="Analytics.clickedFeedback()">Feedback
+</button>
+
+<!-- Modal Danger -->
+<div class="modal fade modal-hmcf modal-danger" id="modalDanger" tabindex="-1" role="dialog"
+     aria-labelledby="modalDangerLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-          	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i></button>
-            <div class="row">
-              <div class="col-sm-4">
-                <i class="fa fa-comments icon"></i>
-              </div> <!-- /.col-sm-6 -->
-              <div class="col-sm-8">
-                <h4 class="modal-title" id="modalDangerLabel">O que você está achando?</h4>
-                <p>Nós estamos nos esforçando para fazer a sua experiência com o iHair a melhor. Deixe uma dica, sugestão ou só um oi =)</p>
-              </div> <!-- /.col-sm-6 -->
-            </div> <!-- /.row -->
-          </div> <!-- /.modal-header -->
-          <form action="php/contact.php" method="POST" class="form-contact" role="form">
-            <div class="modal-body">
-              <div class="form-group col-half">
-                <input type="text" class="form-control" name="email" placeholder="Seu email" required>
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="form-group col-half">
-                <input type="text" class="form-control" name="name" placeholder="Seu nome" required>
-                <i class="fa fa-smile-o"></i>
-              </div>
-              <div class="clearfix"></div>
-              <div class="form-group">
-                <textarea class="form-control message" rows="5" name="message" placeholder="Fala aí!" required></textarea>
-                <i class="fa fa-file-text-o"></i>
-              </div>
-            </div> <!-- /.modal-body -->
-            <div class="modal-footer">
-              <span class="responce-server"></span>
-              <button type="submit" class="btn">Enviar</button>
-            </div> <!-- /.modal-footer -->
-          </form>
-        </div> <!-- /.modal-content -->
-      </div> <!-- /.modal-dialog -->
-    </div> <!-- /.modal -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                        class="fa fa-times-circle-o"></i></button>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <i class="fa fa-comments icon"></i>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                    <div class="col-sm-8">
+                        <h4 class="modal-title" id="modalDangerLabel">O que você está achando?</h4>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <script src="js/jquery.cbpFWSlider.min.js"></script>
-    <script src="js/script-home.js"></script>
-    <script src="js/script.js"></script>
+                        <p>Nós estamos nos esforçando para fazer a sua experiência com o iHair a melhor. Deixe uma dica,
+                            sugestão ou só um oi =)</p>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.modal-header -->
+            <form action="php/contact.php" method="POST" class="form-contact" role="form">
+                <div class="modal-body">
+                    <div class="form-group col-half">
+                        <input type="text" class="form-control" name="email" placeholder="Seu email" required>
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="form-group col-half">
+                        <input type="text" class="form-control" name="name" placeholder="Seu nome" required>
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <textarea class="form-control message" rows="5" name="message" placeholder="Fala aí!"
+                                  required></textarea>
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                </div>
+                <!-- /.modal-body -->
+                <div class="modal-footer">
+                    <span class="responce-server"></span>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+                <!-- /.modal-footer -->
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 
-  </body>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/jquery.cbpFWSlider.min.js"></script>
+<script src="js/script-home.js"></script>
+<script src="js/script.js"></script>
+
+</body>
 </html>
